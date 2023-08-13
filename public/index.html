@@ -3,9 +3,10 @@
 <html>
   <head>
     <title>Main Page</title>  
-    <link rel ="stylesheet" href="carousel_Intro.css">
-    <link rel ="stylesheet" href="header.css">
-    <link rel ="stylesheet" href="gallery.css">
+    <link rel ="stylesheet" href="styles/carousel.css">
+    <link rel ="stylesheet" href="styles/header.css">
+    <link rel ="stylesheet" href="styles/gallery.css">
+    <link rel ="stylesheet" href="styles/intro.css">
 
   </head>
   <body>
@@ -20,14 +21,21 @@
     <section class = "container">
       <div class = "slider-wrapper">
         <div class = "slider">
-          <img id = "slide-1" src = "Art/art (5).jpg">
-          <img id = "slide-2" src = "Art/art (2).jpg">
-          <img id = "slide-3" src = "Art/art (7).jpg">
+          <div class = "track">
+              <img class = "slide current-slide" src = "Art/art (5).jpg">
+              <img class = "slide" src = "Art/art (2).jpg">
+              <img class = "slide" src = "Art/art (7).jpg">
+
+          </div>
+          
           <div class = "slider-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-  
+            <button class="button-left is-hidden" >&#10094;</button>
+            <button class="button-right" >&#10095;</button>
+          </div>
+          <div class = "slider-buttons-set">
+            <button class="slider-buttons current-slide" ></button>
+            <button class="slider-buttons" ></button>
+            <button class="slider-buttons" ></button>            
           </div>
         </div>
       </div>
@@ -64,6 +72,6 @@
     </section>
 
 
-    <script defer src = "art.js"></script>
+    <script defer src = "scripts/art.js"></script>
   </body>
 </html>

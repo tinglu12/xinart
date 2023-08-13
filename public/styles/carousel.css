@@ -1,0 +1,112 @@
+body{
+  margin: 0;
+}
+.container{
+  padding-top: 2rem;
+  position:relative;
+
+}
+
+.slider-wrapper{
+  position:relative;
+  max-width: 80rem;
+  margin: 0 auto;
+
+}
+
+.slider{
+  display: flex;
+  position: relative;
+  aspect-ratio: 21/9;
+  box-shadow: 0 1.5rem 3rem -0.75 hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+}
+
+.slide{
+  position: absolute;
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  width:100%;
+  height: 100%;
+  border-radius: 0.5rem;
+
+}
+
+.slider-nav{
+  display: grid;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+
+}
+
+.track{
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  transition: transform 500ms ease-in;
+
+}
+
+.slider-buttons-set{
+  display: flex;
+  position: absolute;
+  column-gap: 1rem;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.slider-buttons{
+  width: .8rem;
+  height: .8rem;
+  border-radius: 70%;
+  background-color: #ffffff;
+  opacity: 0.50;
+  transition: opacity ease 250ms;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-buttons.current-slide{
+  opacity: 1;
+}
+
+.slider-buttons:hover{
+  opacity: 1;
+
+}
+
+
+
+.button-left, .button-right{
+  color: aliceblue;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: color ease 250ms;
+
+}
+
+.button-left:hover, .button-right:hover{
+  color: rgb(146, 146, 146);
+}
+
+.button-left{
+  position: absolute;
+  left: 1rem  
+  
+}
+.button-right{
+  position: absolute;
+  right: 1rem;
+}
+
+.is-hidden{
+  display: none;
+}
