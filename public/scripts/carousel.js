@@ -1,12 +1,3 @@
-number_of_art = 15;
-let art ="";
-
-
-for (let i = 1; i <= number_of_art; i ++){
-  art += `<div class = "art-g"><img class = "art-g" src = "Art/art (${i}).jpg"></div>`;
-}
-
-document.querySelector(".art-container").innerHTML = art
 
 const track = document.querySelector(".track");
 const slides = Array.from(track.children);
@@ -93,36 +84,3 @@ dotsNav.addEventListener('click', e=>{
 });
 
 
-/*
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("slide");
-  if (n > x.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = x.length;
-  } 
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-
-function currentDiv(n){
-
-  var x = document.getElementsByClassName("slide");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }  
-  x[n].style.display = "block";
-}
-*/
