@@ -4,7 +4,7 @@
   width: min(90%,90rem);
   */
   margin-inline: auto;
-  height: 100dvh;
+  min-height: 100dvh;
   display: grid;
   grid-template-rows: 1fr 9fr;
 }
@@ -29,14 +29,13 @@
   place-items: center;
   gap: min(1rem,3vw);
 
-  padding: 0 2em;
 
 }
 
 .image-container{
 
-  width: clamp(3rem, 6svw + 1rem, 7rem);
-  height: clamp(5rem, 36svh + 1rem, 30rem);
+  width: clamp(3rem, 6dvw + 1rem, 7rem);
+  height: clamp(5rem, 36dvh + 1rem, 30rem);
   transition: .3s;
 }
 
@@ -72,12 +71,6 @@
 @media (min-width: 70rem) {
   .intro-wrapper{
     grid-template-columns: 1fr 2fr;
-  }
-
-}
-@media (max-width: 70rem) {
-  .art-section{
-    width: 50%;
   }
 
 }

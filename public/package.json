@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "masonry": "^0.0.2",
+    "masonry-layout": "^4.2.2"
+  },
+  "name": "site-art",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
