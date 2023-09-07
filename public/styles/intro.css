@@ -4,7 +4,7 @@
   width: min(90%,90rem);
   */
   margin-inline: auto;
-  min-height: 100dvh;
+  height: 100dvh;
   display: grid;
   grid-template-rows: 1fr 9fr;
 }
